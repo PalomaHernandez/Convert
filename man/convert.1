@@ -1,0 +1,33 @@
+.TH CONVERT 8 "12 Oct 2021" "1.0" "convert man page"
+.SH NAME
+.TP
+\fBconvert\fP \- convertir numeros entre diferentes bases
+.SH SINOPSIS
+convert -n <number> [-s <source_base>] [-d <dest_base>] [-v] [-h]
+.SH DESCRIPCION
+\fBconvert\fP permite convertir numeros entre diferentes bases.
+Si la base de origen o de destino no está estipulada, se asume el valor 10.
+\fBconvert\fP tambien cuenta con un modo verboso con el cual se muestra en pantalla el paso a paso de las operaciones.
+.SH OPCIONES
+.TP
+\fB-n <number>\fP
+Numero a ser convertido. Se admiten 10 digitos para la parte entera y 5 para la parte fraccionaria.
+.TP
+\fB-s <source_base>\fP
+Establece la base de origen. Valores posibles entre 2 y 16. (Valor por defecto: 10)
+.TP
+\fB-d <dest_base>\fP
+Establece la base de destino. Valores posibles entre 2 y 16. (Valor por defecto: 10)
+.TP
+\fB-v\fP
+Activa el modo verboso en cuyo caso el paso a paso es mostrado por pantalla.
+.TP
+\fB-h\fP
+Muestra la ayuda.
+.SH BUGS
+¿Bugs? Debe ser un error.
+.SH AUTORES
+.IP \(bu 2
+Paloma Hernandez
+.IP \(bu 2
+Maximiliano Ferrer G.
